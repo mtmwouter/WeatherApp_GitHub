@@ -1,0 +1,67 @@
+.fa-cloud-rain {
+  font-size: 80px;
+  padding-bottom: 22px;
+  padding-top: 35px;
+}
+
+h2 {
+  font-size: 50px;
+  padding-left: 15px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-size: 14px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  word-spacing: 30px;
+}
+
+strong {
+  font-size: 16px;
+}
+
+.container-0 {
+  max-width: 900px;
+  background: white;
+  margin: 0 auto;
+  padding: 30px 60px;
+}
+.container-1 {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px 60px;
+  background: #f2fafc;
+  border-radius: 10px;
+}
+
+.temperture {
+  text-align: center;
+}
+.search-engine {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.btn {
+  vertical-align: 0px;
+}
+
+.weather-today {
+  font-size: 22px;
+}
+
+.website-host {
+  position: relative;
+  bottom: -71px;
+  left: 268px;
+}
