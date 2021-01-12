@@ -1,3 +1,7 @@
+body {
+  font-family: arial, sans-serif;
+}
+
 .fa-cloud-rain {
   font-size: 80px;
   padding-bottom: 22px;
@@ -37,7 +41,7 @@ strong {
   margin: 0 auto;
   padding: 30px 60px;
 }
-.container-1 {
+.weather-app-wrapper {
   max-width: 800px;
   margin: 0 auto;
   padding: 30px 60px;
