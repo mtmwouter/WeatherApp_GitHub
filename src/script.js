@@ -1,11 +1,28 @@
-let time = document.querySelector("#current-Date-Time");
-let degrees = document.querySelector("#current-Degrees");
+function displayTemperature(response) {
 
-let currentTime = new Date();
-console.log(new Date());
-time.innerHTML = `${currentTime}`;
 
-// // Show temperature for city entered in search form
+  console.log(response.data);
+  let temperatureElement = document.querySelector("#current-Degrees");
+  let cityElement = document.querySelector("#city-outcome");
+  let descriptionElement = document.querySelector("#description");
+  let humidityElement = document.querySelector("#humidity");
+  let windElement = document.querySelector("#wind");
+  temperatureElement.innerHTML = Math.round
+  (response.data.main.temp);
+  cityElement.innerHTML = response.data.name;
+  descriptionElement.innerHTML = response.data.weather[0].description;
+  humidityElement.innerHTML = response.data.main.humidity;
+  windElement.innerHTML = Math.round 
+  (response.data.wind.speed);
+}
+
+let apiKey = "5a6ffbc1dc083aafeb2b79c41271ca68";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Amsterdam&appid=${apiKey}&units=metric`;
+
+
+axios.get(apiUrl).then(displayTemperature);
+
+// Show temperature for city entered in search form
 
 function showTemperature(response) {
   let temperature = Math.round(response.data.main.temp);

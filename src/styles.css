@@ -28,11 +28,15 @@ ul {
 }
 
 li {
-  word-spacing: 30px;
+  text-transform: capitalize;
 }
 
 strong {
   font-size: 16px;
+}
+
+.current-weather-description li {
+  word-spacing: 30px;
 }
 
 .container-0 {
@@ -49,7 +53,7 @@ strong {
   border-radius: 10px;
 }
 
-.temperture {
+.current-Weather {
   text-align: center;
 }
 .search-engine {
@@ -68,4 +72,8 @@ strong {
   position: relative;
   bottom: -71px;
   left: 268px;
+}
+
+.weather-symbol {
+  content: 300px;
 }

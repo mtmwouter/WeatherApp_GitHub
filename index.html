@@ -39,33 +39,37 @@
       <div class="container-2">
         <div class="row">
           <div class="col">
-            <div class="temperture">
-              <i class="fas fa-cloud-rain"></i>
-              <h2 id="current-Degrees">
-                13°
-              </h2>
+            <div class="current-Weather">
+              <div class="weather-Symbol">
+              <i class="fas fa-cloud-rain weather-Symbol"></i>
+              </div>
+
+            <h2 id="current-Degrees">13</h2>°C | °F
+              
             </div>
             <h1 id="city-outcome">
               Amsterdam
             </h1>
-            <p>
-              humidity: 68%
-              <br>
-              wind: 24 km/h
-            <p id="current-Date-Time">
-              last update: 17:31
-            </p>
-
-            <br>
-
-
+            <ul>
+              <li>
+                humidity: <span id="humidity">68</span>%
+              </li>
+              <li>
+                wind: <span id="wind">24</span> km/h
+              </li>
+              <li id="description"></li>
+              <li>
+                last update: 17:31
+              </li>
+            </ul>
+            
 
           </div>
           <div class="col col-time">
-            <ul>
+            <ul class="current-weather-description">
               <li>
                 09:00
-                <i class="fas fa-cloud-rain weather-today"></i>
+                <i class="fas fa-cloud-rain weather-today" ></i>
                 9°
               </li>
               <li>
