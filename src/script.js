@@ -44,12 +44,14 @@ function displayTemperature(response) {
   
   }
 
+
 let apiKey = "5a6ffbc1dc083aafeb2b79c41271ca68";
 let city = "Amsterdam";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-
-
 axios.get(apiUrl).then(displayTemperature);
+
+
+
 
 // Show temperature for city entered in search form
 
@@ -73,7 +75,8 @@ function citySearch(event) {
 }
 
 let CityForm = document.querySelector("#current-city");
-CityForm.addEventListener("submit", citySearch);
+CityForm.addEventListener("click", citySearch);
+
 
 // Show current temperature for current location
 
