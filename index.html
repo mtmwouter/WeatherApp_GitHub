@@ -18,34 +18,29 @@
 <body>
   <div class="container-0">
     <div class="weather-app-wrapper">
-      <div class="row">
-        <div class="col-12">
-          <form class="search-engine" id="current-city">
-            <div class="row">
-              <div class="col-8">
-              <input 
-                type="text" 
-                placeholder="Enter a city..." 
-                id="search-text-input" 
-                class="form-control"/>
-              </div>
-              <div class="col-2">
-                <button type="button" class="btn btn-light">
-                Search
-                </button>
-              </div>
-              <div class="col-2">
-                <button class="btn btn-success" id="current-location-button">
-                  Current
-                </button>
-              </div>
-            </div>
-            
-          </form>
+      <form id="search-form" class="mb-3">
+        <div class="row">
+          <div class="col-9">
+          <input 
+          type="search" 
+          placeholder="Type a city..." 
+          class="form-control"
+          id="city-input"
+          autocomplete="off"
+          />
+          </div>
+          <div class="col-3">
+            <input 
+            type="submit" 
+            value="Search"
+            class="btn btn-primary w-100" 
+            />
+          </div>
         </div>
-      </div>
+      </form>
+      
 
-      <div class="container-2">
+      <div class="weather-app">
         <div class="row">
           <div class="col">
             <div class="current-Weather">

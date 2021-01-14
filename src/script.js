@@ -45,60 +45,34 @@ function displayTemperature(response) {
   }
 
 
+function search(event) {
+  event.preventDefault(); 
+  let searchTextInputElement = dpcument.querySelector("#search-text-input");
+  console.log(searchTextInputElement);
+
+}
+
+function search(city) {
 let apiKey = "5a6ffbc1dc083aafeb2b79c41271ca68";
-let city = "Amsterdam";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 axios.get(apiUrl).then(displayTemperature);
+}
 
 
 
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
+
+}
+
+
+
+
+search("Amsterdam");
 
 // Show temperature for city entered in search form
 
-function showTemperature(response) {
-  let temperature = Math.round(response.data.main.temp);
-  let temperatureOutcome = document.querySelector("#current-Degrees");
-  let message = `${temperature} °C`;
-  temperatureOutcome.innerHTML = message;
-}
-
-function citySearch(event) {
-  event.preventDefault();
-  let searchInput = document.querySelector("#search-text-input");
-  let cityOutcome = document.querySelector("#city-outcome");
-  let units = "metric";
-  let city = `${searchInput.value}`;
-  let apiKey = "5a6ffbc1dc083aafeb2b79c41271ca68";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
-  cityOutcome.innerHTML = `${searchInput.value}`;
-  axios.get(`${apiUrl}`).then(showTemperature);
-}
-
-let CityForm = document.querySelector("#current-city");
-CityForm.addEventListener("click", citySearch);
-
-
-// Show current temperature for current location
-
-function currentLocationShowTemperature(response) {
-  let city = response.data.name;
-  let temperature = Math.round(response.data.main.temp);
-  let cityElement = document.querySelector("#city-outcome");
-  let temperatureElement = document.querySelector("#current-Degrees");
-  cityElement.innerHTML = `${city}`;
-  temperatureElement.innerHTML = `${temperature} °C`;
-}
-
-function searchLocation(position) {
-  let apiKey = "5a6ffbc1dc083aafeb2b79c41271ca68";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(currentLocationShowTemperature);
-}
-
-function getCurrentLocation(event) {
-  event.preventDefault();
-  navigator.geolocation.getCurrentPosition(searchLocation);
-}
-
-let currentLocationButton = document.querySelector("#current-location-button");
-currentLocationButton.addEventListener("click", getCurrentLocation);
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
