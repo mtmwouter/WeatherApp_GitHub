@@ -35,8 +35,12 @@ strong {
   font-size: 16px;
 }
 
-.current-weather-description li {
+.daily-forecast li {
   word-spacing: 30px;
+}
+
+.current-weather-description {
+  text-align: center;
 }
 
 .container-0 {
@@ -55,6 +59,7 @@ strong {
 
 .current-Weather {
   text-align: center;
+  padding: 70px 57px 20px 10px;
 }
 .search-engine {
   padding-top: 20px;
@@ -74,6 +79,22 @@ strong {
   left: 268px;
 }
 
-.weather-symbol {
-  content: 300px;
+.weather-Symbol {
+  padding: 0px 0px 0px 0px;
+}
+
+#current-degrees-number {
+  padding: 20px 0px 0px 75px;
+}
+
+#current-degrees-units {
+  padding: 20px 0px 0px 12px;
+}
+
+#city-outcome {
+  padding: 20px 0px 18px 50px;
+}
+
+#current-weater-symbol {
+  padding: 0px 5px 0px 0px;
 }

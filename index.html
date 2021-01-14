@@ -44,25 +44,25 @@
         <div class="row">
           <div class="col">
             <div class="current-Weather">
-              <div class="weather-Symbol">
-              <img src=""
-              alt="partly-Cloudy"
-              id="icon"
-
-              />
-
-
-
-              <i class="fas fa-cloud-rain weather-Symbol"></i>
+            <div class="row">
+              <div class="col-4" id="current-degrees-number">
+              <h2 id="current-Degrees">13</h2>
               </div>
-
-            <h2 id="current-Degrees">13</h2>°C | °F
-              
+              <div class="col-4" id="current-degrees-units">
+              °C | °F
+              </div>
+              <div class="col-4" id="current-weater-symbol">
+              <div class="weather-Symbol">
+              <img src="" alt="partly-Cloudy" id="icon" />
+              </div>
+              </div>
+                
+              </div>
             </div>
             <h1 id="city-outcome">
               Amsterdam
             </h1>
-            <ul>
+            <ul class="current-weather-description">
               <li>
                 humidity: <span id="humidity">68</span>%
               </li>
@@ -76,7 +76,7 @@
 
           </div>
           <div class="col col-time">
-            <ul class="current-weather-description">
+            <ul class="daily-forecast">
               <li>
                 09:00
                 <i class="fas fa-cloud-rain weather-today" ></i>

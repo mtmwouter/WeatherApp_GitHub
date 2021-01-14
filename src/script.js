@@ -20,7 +20,6 @@ function formatDate(timestamp) {
 // Show Temperature when opening website
 
 function displayTemperature(response) {
-
   let temperatureElement = document.querySelector("#current-Degrees");
   let cityElement = document.querySelector("#city-outcome");
   let descriptionElement = document.querySelector("#description");
@@ -49,7 +48,6 @@ function search(event) {
   event.preventDefault(); 
   let searchTextInputElement = dpcument.querySelector("#search-text-input");
   console.log(searchTextInputElement);
-
 }
 
 function search(city) {
