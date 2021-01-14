@@ -102,3 +102,28 @@ let celsiusLink = document.querySelector("#celcius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("Amsterdam");
+
+// 
+
+function currentLocationShowTemperature(response) {
+  let city = response.data.name;
+  let temperature = Math.round(response.data.main.temp);
+  let cityElement = document.querySelector("#city-outcome");
+  let temperatureElement = document.querySelector("#current-Degrees");
+  cityElement.innerHTML = `${city}`;
+  temperatureElement.innerHTML = `${temperature} °C`;
+}
+
+function searchLocation(position) {
+  let apiKey = "5a6ffbc1dc083aafeb2b79c41271ca68";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(currentLocationShowTemperature);
+}
+
+function getCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(searchLocation);
+}
+
+let currentLocationButton = document.querySelector("#current-location-button");
+currentLocationButton.addEventListener("click", getCurrentLocation);
