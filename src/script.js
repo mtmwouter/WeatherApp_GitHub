@@ -103,7 +103,8 @@ celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("Amsterdam");
 
-// 
+
+// Show current temperature for current location
 
 function currentLocationShowTemperature(response) {
   let city = response.data.name;

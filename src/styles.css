@@ -2,20 +2,8 @@ body {
   font-family: arial, sans-serif;
 }
 
-.fa-cloud-rain {
-  font-size: 80px;
-  padding-bottom: 22px;
-  padding-top: 35px;
-}
-
 h2 {
   font-size: 50px;
-  padding-left: 15px;
-  text-align: center;
-}
-
-h1 {
-  text-align: center;
 }
 
 p {
@@ -39,10 +27,6 @@ strong {
   word-spacing: 30px;
 }
 
-.current-weather-description {
-  text-align: center;
-}
-
 .container-0 {
   max-width: 900px;
   background: white;
@@ -52,15 +36,11 @@ strong {
 .weather-app-wrapper {
   max-width: 800px;
   margin: 0 auto;
-  padding: 30px 60px;
+  padding: 60px 60px;
   background: #f2fafc;
   border-radius: 10px;
 }
 
-.current-Weather {
-  text-align: center;
-  padding: 70px 57px 20px 10px;
-}
 .search-engine {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -79,6 +59,10 @@ strong {
   left: 268px;
 }
 
+.col-6 {
+  padding: 0px 0px 0px 29px;
+}
+
 .current-Weather .active {
   color: black;
   cursor: default;
@@ -88,22 +72,18 @@ strong {
   text-decoration: none;
 }
 
-.weather-Symbol {
+.current-weather-description {
+  padding: 0px 0px 0px 0px;
+}
+
+#current-weather-symbol {
+  padding: 0px 0px 0px 0px;
+}
+
+#current-degrees-units {
   padding: 0px 0px 0px 0px;
 }
 
 #current-degrees-number {
-  padding: 20px 0px 0px 75px;
-}
-
-#current-degrees-units {
-  padding: 20px 0px 0px 45px;
-}
-
-#city-outcome {
-  padding: 20px 0px 18px 50px;
-}
-
-#current-weater-symbol {
-  padding: 0px 5px 0px 0px;
+  padding: 0px 0px 0px 0px;
 }

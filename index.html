@@ -18,6 +18,7 @@
 <body>
   <div class="container-0">
     <div class="weather-app-wrapper">
+
       <form id="search-form" class="mb-3">
         <div class="row">
           <div class="col-7">
@@ -43,70 +44,65 @@
           </div>
         </div>
       </form>
+      <div class="overview">
+        <h1 id="city-outcome">
+          Amsterdam
+        </h1>
+        <ul class="current-weather-description">
+          <li id="description"></li>
+          <li> Last updated at <span id="date"></span></li>
+        </ul>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="clearfix weather-temperature">
+            <div class="current-Weather">
+             <div class="row">
+              <div class="float-left" id="current-degrees-number">
+                <h2 id="current-Degrees">13</h2>
+              </div>
+              <div class="float-left" id="current-degrees-units">
+                <span class="units"><a href="#" id="celcius-link" class="active">°C</a> | <a href="#"
+                    id="fahrenheit-link">°F</a></span>
+          
+              </div>
+              <div class="col-4" id="current-weather-symbol">
+                <div class="weather-Symbol">
+                  <img src="" alt="partly-Cloudy" id="icon" />
+                </div>
+              </div>
+          
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <ul>
+            <li>
+              humidity: <span id="humidity">68</span>%
+            </li>
+            <li>
+              wind: <span id="wind">24</span> km/h
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+
+      
+      
+
       
 
       <div class="weather-app">
         <div class="row">
           <div class="col">
-            <div class="current-Weather">
-            <div class="row">
-              <div class="col-4" id="current-degrees-number">
-              <h2 id="current-Degrees">13</h2>
-              </div>
-              <div class="col-4" id="current-degrees-units">
-                <span class="units"><a href="#" id="celcius-link" class= "active">°C</a> | <a href="#" id="fahrenheit-link">°F</a></span>
-              
-              </div>
-              <div class="col-4" id="current-weater-symbol">
-              <div class="weather-Symbol">
-              <img src="" alt="partly-Cloudy" id="icon" />
-              </div>
-              </div>
-                
-              </div>
-            </div>
-            <h1 id="city-outcome">
-              Amsterdam
-            </h1>
-            <ul class="current-weather-description">
-              <li>
-                humidity: <span id="humidity">68</span>%
-              </li>
-              <li>
-                wind: <span id="wind">24</span> km/h
-              </li>
-              <li id="description"></li>
-              <li> Last updated at <span id="date"></span></li>
-            </ul>
+           
             
+          </div>
+          
 
-          </div>
-          <div class="col col-time">
-            <ul class="daily-forecast">
-              <li>
-                09:00
-                <i class="fas fa-cloud-rain weather-today" ></i>
-                9°
-              </li>
-              <li>
-                12:00 <i class="fas fa-cloud-rain weather-today"></i>
-                10°
-              </li>
-              <li>
-                15:00 <i class="fas fa-cloud-rain weather-today"></i>
-                11°
-              </li>
-              <li>
-                18:00 <i class="fas fa-cloud-rain weather-today"></i>
-                13°
-              </li>
-              <li>
-                21:00 <i class="fas fa-cloud-rain weather-today"></i>
-                10°
-              </li>
-            </ul>
-          </div>
-        </div>
 
         <div class="container-3">
           <div class="row weekly-forecast">
