@@ -79,6 +79,15 @@ strong {
   left: 268px;
 }
 
+.current-Weather .active {
+  color: black;
+  cursor: default;
+}
+
+.current-Weather .active:hover {
+  text-decoration: none;
+}
+
 .weather-Symbol {
   padding: 0px 0px 0px 0px;
 }
