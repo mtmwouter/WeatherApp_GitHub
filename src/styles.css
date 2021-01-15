@@ -36,7 +36,7 @@ strong {
 .weather-app-wrapper {
   max-width: 800px;
   margin: 0 auto;
-  padding: 60px 60px;
+  padding: 30px 60px;
   background: #f2fafc;
   border-radius: 10px;
 }
@@ -74,6 +74,10 @@ strong {
 
 .current-weather-description {
   padding: 0px 0px 0px 0px;
+}
+
+.col-time {
+  padding: 36px 0px 0px 0px;
 }
 
 #current-weather-symbol {
