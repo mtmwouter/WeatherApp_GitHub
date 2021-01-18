@@ -6,6 +6,10 @@ h2 {
   font-size: 50px;
 }
 
+h3 {
+  font-size: 1.4rem;
+}
+
 p {
   text-align: center;
   font-size: 14px;
@@ -55,8 +59,12 @@ strong {
 
 .website-host {
   position: relative;
-  bottom: -71px;
+  bottom: 0px;
   left: 268px;
+}
+
+.weather-forecast-temperature {
+  padding-left: 30px;
 }
 
 .col-6 {
@@ -78,6 +86,10 @@ strong {
 
 .col-time {
   padding: 36px 0px 0px 0px;
+}
+
+.col-3 {
+  padding: 0px 0px 0px 0px;
 }
 
 #current-weather-symbol {
