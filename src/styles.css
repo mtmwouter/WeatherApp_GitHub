@@ -1,5 +1,6 @@
 body {
   font-family: arial, sans-serif;
+  color: grey;
 }
 
 h2 {
@@ -8,6 +9,7 @@ h2 {
 
 h3 {
   font-size: 1.4rem;
+  padding-left: 21px;
 }
 
 p {
@@ -85,7 +87,7 @@ strong {
 }
 
 .col-time {
-  padding: 36px 0px 0px 0px;
+  padding: 40px 0px 0px 0px;
 }
 
 .col-3 {
@@ -97,9 +99,10 @@ strong {
 }
 
 #current-degrees-units {
-  padding: 0px 0px 0px 0px;
+  padding: 20px 0px 0px 0px;
 }
 
 #current-degrees-number {
-  padding: 0px 0px 0px 0px;
+  padding: 20px 0px 0px 0px;
 }
+#current-degrees-units
